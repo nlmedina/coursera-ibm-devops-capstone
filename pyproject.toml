@@ -19,5 +19,6 @@ dependencies = [
     "pylint==2.14.0",
     "python-dotenv==0.20.0",
     "sqlalchemy==1.4.46",
+    "talisman>=0.1.0",
     "werkzeug==2.1.2",
 ]
