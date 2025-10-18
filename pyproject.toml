@@ -10,6 +10,7 @@ dependencies = [
     "flake8==4.0.1",
     "flask==2.1.2",
     "flask-sqlalchemy==2.5.1",
+    "flask-talisman>=1.1.0",
     "gunicorn==20.1.0",
     "honcho==1.1.0",
     "httpie==3.2.1",
@@ -19,6 +20,5 @@ dependencies = [
     "pylint==2.14.0",
     "python-dotenv==0.20.0",
     "sqlalchemy==1.4.46",
-    "talisman>=0.1.0",
     "werkzeug==2.1.2",
 ]
