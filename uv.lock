@@ -223,6 +223,7 @@ dependencies = [
     { name = "pylint" },
     { name = "python-dotenv" },
     { name = "sqlalchemy" },
+    { name = "talisman" },
     { name = "werkzeug" },
 ]
 
@@ -243,6 +244,7 @@ requires-dist = [
     { name = "pylint", specifier = "==2.14.0" },
     { name = "python-dotenv", specifier = "==0.20.0" },
     { name = "sqlalchemy", specifier = "==1.4.46" },
+    { name = "talisman", specifier = ">=0.1.0" },
     { name = "werkzeug", specifier = "==2.1.2" },
 ]
 
@@ -480,7 +482,7 @@ name = "importlib-metadata"
 version = "8.7.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "zipp" },
+    { name = "zipp", marker = "python_full_version < '3.10'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/76/66/650a33bd90f786193e4de4b3ad86ea60b53c89b669a5c7be931fac31cdb0/importlib_metadata-8.7.0.tar.gz", hash = "sha256:d13b81ad223b890aa16c5471f2ac3056cf76c5f10f82d6f9292f0b415f389000", size = 56641, upload-time = "2025-04-27T15:29:01.736Z" }
 wheels = [
@@ -1094,6 +1096,15 @@ wheels = [
 ]
 
 [[package]]
+name = "six"
+version = "1.17.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031, upload-time = "2024-12-04T17:35:28.174Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
+]
+
+[[package]]
 name = "sqlalchemy"
 version = "1.4.46"
 source = { registry = "https://pypi.org/simple" }
@@ -1119,6 +1130,18 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/73/3e/b82293fc17612488ff068c5235e743ebfe05310301984ca0467f88237572/SQLAlchemy-1.4.46-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b6e4cb5c63f705c9d546a054c60d326cbde7421421e2d2565ce3e2eee4e1a01f", size = 1626449, upload-time = "2023-01-03T21:52:48.465Z" },
     { url = "https://files.pythonhosted.org/packages/93/d5/343f29c27892d34ce774afc421d6174d71586915ebf6bdcc0b4f2b0e946c/SQLAlchemy-1.4.46-cp39-cp39-win32.whl", hash = "sha256:51e1ba2884c6a2b8e19109dc08c71c49530006c1084156ecadfaadf5f9b8b053", size = 1579234, upload-time = "2023-01-03T22:21:26.671Z" },
     { url = "https://files.pythonhosted.org/packages/5d/8d/e80ccbb290db8de2faccceb1e121886b45ea1463253dabb3e88a6195c276/SQLAlchemy-1.4.46-cp39-cp39-win_amd64.whl", hash = "sha256:315676344e3558f1f80d02535f410e80ea4e8fddba31ec78fe390eff5fb8f466", size = 1581553, upload-time = "2023-01-03T22:17:38.729Z" },
+]
+
+[[package]]
+name = "talisman"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/28/36/9e956917b35eca994d24f5e1d53444369df8144d4e35bc69aceaa2aeb668/talisman-0.1.0.tar.gz", hash = "sha256:bd394d0f2d7926a838acaa066457c20878e31f2aaf539f5c5529ded1887b3fa8", size = 10123, upload-time = "2015-11-13T18:19:15.245Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/69/f9/1d0d75804f4eb5a6d0f3b9d46f4248f403fa7dc4e72060bda4b0ef65614d/talisman-0.1.0-py2.py3-none-any.whl", hash = "sha256:0128ea74b31827a67a4d6e0eb842066193c60f4f90675ec3a64850000a3a3402", size = 13174, upload-time = "2015-11-13T18:19:06.892Z" },
 ]
 
 [[package]]
